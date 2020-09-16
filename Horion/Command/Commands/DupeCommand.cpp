@@ -14,7 +14,7 @@ bool DupeCommand::execute(std::vector<std::string>* args) {
 
 	C_ItemStack* selectedItem = g_Data.getLocalPlayer()->getSelectedItem();
 
-	auto slot = supplies->selectedHotbarSlot;
+	auto slot = supplies->secondHotbarSlot;
 
 	C_InventoryAction actions[36 * 2];
 	int numActions = 0;
